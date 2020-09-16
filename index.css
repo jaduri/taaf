@@ -15,7 +15,7 @@ body {
   width: 100%;
   margin: 0 auto;
   font-family: helvetica;
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   padding-top: 50px;
   padding-bottom: 40px;
   min-height: 100vh;
@@ -106,6 +106,7 @@ header {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: 100% 46%;
+  box-shadow: 0 5px 15px #bdbdbd;
 }
 #home-banner h1{
   color: #ffffff;
@@ -204,11 +205,23 @@ header {
   width: 100%;
 }
 #dorcas-home {
-  background: linear-gradient(#3d3d3d80, #3d3d3d80), url(images/dorcas/01.jpg);
+  background: linear-gradient(#3d3d3d80, #3d3d3d80), url(images/dorcas/12.jpg);
+  background-size: cover;
+}
+#miriam-home {
+  background: linear-gradient(#3d3d3d80, #3d3d3d80), url(images/ehi/15.jpg);
   background-size: cover;
 }
 #ehi-home {
-  background: linear-gradient(#3d3d3d80, #3d3d3d80), url(images/ehi/01.jpg);
+  background: linear-gradient(#3d3d3d80, #3d3d3d80), url(images/dorcas/03.jpg);
+  background-size: cover;
+}
+#jnile-home {
+  background: linear-gradient(#3d3d3d80, #3d3d3d80), url(images/ehi/12.jpg);
+  background-size: cover;
+}
+#taltak-home {
+  background: linear-gradient(#3d3d3d80, #3d3d3d80), url(images/dorcas/04.jpg);
   background-size: cover;
 }
 .focus {
@@ -269,11 +282,18 @@ header {
   top: -40px;
 }
 form, #contact-details {
-
+  min-width: 50%;
 }
 form {
   display: block;
   position: relative;
+  padding-right: 10%;
+}
+form *:active {
+  outline: none;
+}
+form *:focus {
+  outline: none;
 }
 #post-head {
   font-family: 'Inria Sans';
@@ -311,6 +331,12 @@ form button {
   border: none;
   background-color: #2fb000;
   color: white;
+  transition-property: transform  box-shadow;
+  transition: 0.1s ease-in;
+}
+form button:hover {
+  box-shadow: 0 2px 10px gray;
+  transform: translateY(-2px);
 }
 #statements {
   margin-top: 40px;
@@ -343,9 +369,10 @@ form button {
   width: 3%;
 }
 .project-details {
-  background-color: ;
-  border-radius: 5px;
-  margin: 40px auto 80px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px lightgray;
+  margin: 40px auto;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -422,12 +449,19 @@ footer p {
   color: lightgray;
   text-align: center;
 }
+.subtle-yellow {
+  color: #7d7d7d;
+  text-decoration: underline solid #ecf00099;
+}
+.subtle-gray {
+  color: #7d7d7d;
+}
 #social-more {
   text-align: center;
   margin-bottom: 70px;
 }
 .social {
-  background-color: #ffffff;
+  background-color: ;
   border-radius: 5px 0 0 5px;
   display: flex;
   flex-direction: column;
@@ -471,6 +505,9 @@ footer p {
   }
   #contact-flex {
     flex-direction: column;
+  }
+  .main-section p {
+    width: 100%;
   }
 }
 @media screen and (max-width: 550px){

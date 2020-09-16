@@ -5,9 +5,9 @@
   <meta name="description" content="TAAF is a non-profit, non-governmental organisation that focuses on empowering women in order to improve their quality of life and their local community">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./index.css">
-  <link href="https://fonts.googleapis.com/css?family=Inria+Sans|Merriweather+Sans|Merriweather|Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inria+Sans|Merriweather+Sans|Open+Sans|Lato&display=swap" rel="stylesheet">
   <link rel="icon" href="./images/icon.ico">
-  <title>THE AMINA AGBO FOUNDATION</title>
+  <title>THE AMINA AGBO FOUNDATION - Empowering women & communities</title>
 </head>
 <body>
   <header>
@@ -79,7 +79,7 @@
                 </div>
               </a>
               <a href="./projects.html#j-nile" class = "project-item">
-                <h4>The J-Nile Project</h4>
+                <h4 id="jnile-home">The J-Nile Project</h4>
                 <div class="overview">
                   <h5 class="focus">Youth</h5>
                   <p class="small-text">
@@ -89,7 +89,7 @@
                 </div>
               </a>
               <a href="./projects.html#talitakumi" class = "project-item">
-                <h4 id="taltak">The Talitakumi Project</h4>
+                <h4 id="taltak-home">The Talitakumi Project</h4>
                 <div class="overview">
                   <h5 class="focus">Health checks and awareness</h5>
                   <p class="small-text">
@@ -132,18 +132,18 @@
                       <a href="https://www.instagram.com/taafonline" target="_blank"><img src="./images/icons/official_insta_icon.svg" alt=""></a>
                     </div>
                   </div>
-                  <form action="mailto:theaminaagbofoundation@gmail.com" method="post" enctype="text/plain">
+                  <form action="mailto:theaminaagbofoundation@gmail.com" method="POST" enctype="text/plain">
                     <label id="post-head">Send us a message</label>
-                    <label for="name">Name:<input type="text" name="name"> </label><br>
-                    <label for="email">Email: <input type="email" name="email"> </label><br>
-                    <label for="topic">Topic: <input type="text" name="topic"> </label><br>
-                    <label for="message">Message: <textarea name="name" rows="8" cols="80"></textarea> </label>
+                    <label for="name">Name:<input type="text" name="name" required> </label><br>
+                    <label for="email">Email: <input type="email" name="email" required> </label><br>
+                    <label for="topic">Topic: <input type="text" name="topic" required> </label><br>
+                    <label for="message">Message: <textarea name="body" rows="8" cols="80" required></textarea> </label>
                     <button type="submit" name="submit" id="submit">Send</button>
                   </form>
                 </div>
               </section>
               <footer>
-                <p>Copyright &copy; TAAF 2020. All rights reserved.<p>
+                <p>Copyright &copy; TAAF 2020. All rights reserved. <span class="subtle-gray">Designed and developed by</span> <a href="https://tjaduwari.glitch.me/" target="_blank"><span class="subtle-yellow">T.J.ADUWARI</span></a><p>
                 </footer>
               </body>
               </html>
