@@ -15,7 +15,7 @@ body {
   width: 100%;
   margin: 0 auto;
   font-family: helvetica;
-  background-color: #f0f0f0;
+  background-color: #fff;
   padding-top: 50px;
   padding-bottom: 40px;
   min-height: 100vh;
@@ -371,7 +371,7 @@ form button:hover {
 .project-details {
   background-color: #ffffff;
   border-radius: 15px;
-  box-shadow: 0 4px 10px lightgray;
+  box-shadow: 0 0px 10px lightgray;
   margin: 40px auto;
   padding: 20px;
   box-sizing: border-box;
