@@ -62,6 +62,7 @@ function changeImage(arr){
   }
 }
 
+//
 
 function mediaQuery(x){
   if (x.matches){

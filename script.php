@@ -7,7 +7,7 @@
     'Reply-To: '. $email . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-  mail("taaccomn@taaf.com.ng", $topic, $message, $headers);
+  mail("taafcomn@taaf.com.ng", $topic, $message, $headers);
 ?>
 
 <!DOCTYPE html>
